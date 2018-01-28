@@ -8,38 +8,28 @@
     <script src="calculation.js"></script>
   </head>
   <body>
-    <p>Hello, this is a calculator.</p>
-    <div class="the-good-bit">
-      <p>Enter numbers: 
-        <select id="first">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select>
-        <select id="second">
-          <option value="0">0</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-        </select> 
-      </p>
-      <p>
-        <span id="result">watch this space!</span>
-      </p>
-      <button onclick="add()">Add</button>
-      <button onclick="multiply()">Multiply</button>
+    <p>
+      Hello, this is a calculator.
+    </p>
+    <p>
+      <span id="viewer"></span>
+    </p>
+    <div id="numbers">
+      <input type='button' value="0" />
+      <input type='button' value="1" />
+      <input type='button' value="2" />
+      <input type='button' value="3" />
+      <input type='button' value="4" />
+      <input type='button' value="5" />
+      <input type='button' value="6" />
+      <input type='button' value="7" />
+      <input type='button' value="8" />
+      <input type='button' value="9" />
+    </div>
+    <div id="operations">
+      <button value="add">+</button>
+      <button value="multiply">x</button>
+    </div>
+    <button onclick="calculate()">Calculate</button>
   </body>
 </html>
