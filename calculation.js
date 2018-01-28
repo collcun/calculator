@@ -1,1 +1,3 @@
-document.getElementById("calculation").innerHTML=String(2+2);
+function calculate() {
+  document.getElementById("calculation").innerHTML=String(2+2);
+}
