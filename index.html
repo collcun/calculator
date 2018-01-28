@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <title>Calculator</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="calculation.js"></script>
   </head>
   <body>
     <p>Hello, this is a calculator.</p>
     <div class="the-good-bit">
-      <p>The sum of 
+      <p>The 
+        <select id="function">
+          <option value="sum">sum</option>
+          <option value="product">product</option>
+        </select>
+         of 
         <select id="first">
           <option value="0">0</option>
           <option value="1">1</option>
@@ -36,6 +42,5 @@
         </select> 
           is <span id="calculation">not yet known!!</span></p>
       <button onclick="calculate()">Calculate Answer</button>
-    <script src="calculation.js"></script>
   </body>
 </html>
