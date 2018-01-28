@@ -1,17 +1,22 @@
 var answer = 0;
-var values = parseInt($("select#first").val()) + parseInt($("select#second").val());
-var operation = $("select#function").val();
+var values = 0;
 
-function calculate() {
+function getValues() {
   values = [parseInt($("select#first").val()), parseInt($("select#second").val())];
-  operation = $("select#function").val();
-  switch (operation) {
-    case "sum":
-      answer = values[0] + values[1];
-      break;
-    case "product":
-      answer = values[0] * values[1];
-      break;
-  }
-  document.getElementById("calculation").innerHTML=String(answer);
+}
+
+function updateResult() {
+  document.getElementById("result").innerHTML=String(answer);
+}
+
+function add() {
+  getValues();
+  answer = values[0] + values[1];
+  updateResult();
+}
+
+function multiply() {
+  getValues();
+  answer = values[0] * values[1];
+  updateResult();
 }

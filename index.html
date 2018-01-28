@@ -9,12 +9,7 @@
   <body>
     <p>Hello, this is a calculator.</p>
     <div class="the-good-bit">
-      <p>The 
-        <select id="function">
-          <option value="sum">sum</option>
-          <option value="product">product</option>
-        </select>
-         of 
+      <p>Enter numbers: 
         <select id="first">
           <option value="0">0</option>
           <option value="1">1</option>
@@ -27,7 +22,6 @@
           <option value="8">8</option>
           <option value="9">9</option>
         </select>
-         and 
         <select id="second">
           <option value="0">0</option>
           <option value="1">1</option>
@@ -40,7 +34,11 @@
           <option value="8">8</option>
           <option value="9">9</option>
         </select> 
-          is <span id="calculation">not yet known!!</span></p>
-      <button onclick="calculate()">Calculate Answer</button>
+      </p>
+      <p>
+        <span id="result">watch this space!</span>
+      </p>
+      <button onclick="add()">Add</button>
+      <button onclick="multiply()">Multiply</button>
   </body>
 </html>
